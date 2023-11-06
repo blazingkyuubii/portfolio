@@ -10,8 +10,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Drezza Anacito</title>
-        <link rel="icon" href="/portfolio/assets/logo.png">
+        <link rel="icon" href="assets/logo.png">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -27,12 +28,12 @@
             <header>
                 <nav class="transparent-bg" id="navbar">
                     <!-- <div class="logo">
-                        <img src="/portfolio/assets/d-icon.png" alt="Logo" id="logoimg">
+                        <img src="assets/d-icon.png" alt="Logo" id="logoimg">
                     </div> -->
 
                 <ul>
                     <li class="pages">
-                        <img src="/portfolio/assets/logo.png" alt="Logo" id="logoimg">
+                        <img src="assets/logo.png" alt="Logo" id="logoimg">
                     </li>
                     <li class="pages">
                         <a href="#home">Home</a>
@@ -67,14 +68,14 @@
         <!-- ABOUT SECTION -->
         <div class="home" id="about">
             <div class="ownerimg">
-                <img src="/portfolio/assets/owner.png" alt="myPhoto" id="ownerImg">
+                <img src="assets/owner.png" alt="myPhoto" id="ownerImg">
             </div>
 
             <div class="box b">
             <h1 class="section-title">About</h1>
                 <p>Welcome to my web portfolio, where creativity meets functionality. 
                         Explore a showcase of my work and skills in web and app development, and get to know the mind behind the code.</p>          
-                <a class="resumeBtn" href="/portfolio/assets/resume.pdf" target="_blank">
+                <a class="resumeBtn" href="assets/resume.pdf" target="_blank">
                     <span class="resumeBtnspan">
                         RESUME
                     </span>
@@ -222,7 +223,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <!-- modal-content -->
-                <img src="/portfolio/assets/loopbanner.png">
+                <img src="assets/loopbanner.png">
                 <h1>LOOP</h1>
                 <p>This is an E-Commerce Mobile Application about selling Chocolates. It includes a front-end and a back-end database that
                 handles the user accounts, user orders, etc. This is the v2 of the mobile app where a back-end is added.
@@ -244,7 +245,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <!-- modal-content -->
-                <img src="/portfolio/assets/chocbanner.png">
+                <img src="assets/chocbanner.png">
                 <h1>CHOCOHOLICS</h1>
                 <p>This is an E-Commerce Mobile Application about selling Chocolates. It includes a front-end and a back-end database
                     that
@@ -270,7 +271,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <!-- modal-content -->
-                <img src="/portfolio/assets/loopbanner.png">
+                <img src="assets/loopbanner.png">
                 <h1>Portfolio</h1>
                 <p>This is an E-Commerce Mobile Application about selling Chocolates. It includes a front-end and a back-end database
                     that
@@ -301,19 +302,19 @@
             <div class="projbox a">
                 <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true }'>
                     <div class="carousel-cell">
-                        <img src="/portfolio/assets/loopbanner.png" class="bannerimg">
+                        <img src="assets/loopbanner.png" class="bannerimg">
                         <div class="info-overlay">
                             <button class="info-btn" data-target="bn1">View Project</button>
                         </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="/portfolio/assets/chocbanner.png" class="bannerimg">
+                        <img src="assets/chocbanner.png" class="bannerimg">
                         <div class="info-overlay">
                             <button class="info-btn" data-target="bn2">View Project</button>
                         </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="/portfolio/assets/placeholderjde.png" class="bannerimg">
+                        <img src="assets/placeholderjde.png" class="bannerimg">
                         <div class="info-overlay">
                             <button class="info-btn" data-target="bn3">View Project</button>
                         </div>
@@ -343,7 +344,7 @@
         <footer>
             <div class="footer-container">
                     <p>Made By</p>
-                    <img src="/portfolio/assets/logo.png" id="footericon">
+                    <img src="assets/logo.png" id="footericon">
                     <p>Drezza Anacito</p>
             </div>
             
@@ -352,6 +353,8 @@
 
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <script>AOS.init();</script>
         <script src="index.js"></script>
     </body>
 </html>
