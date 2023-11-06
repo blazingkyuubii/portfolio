@@ -98,7 +98,7 @@ nav a{
 
 .hero{
   background-color: black;
-  background-image: url("/portfolio/assets/hero.svg");
+  background-image: url("assets/hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -341,7 +341,7 @@ nav a{
 
 footer{
   background-color: black;
-  background-image: url("/portfolio/assets/hero.svg");
+  background-image: url("assets/hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
