@@ -15,12 +15,13 @@
         <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
         <link rel="stylesheet" href="node_modules/animate.css/animate.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,200;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     </head>
 
@@ -41,6 +42,9 @@
                     </li>
                     <li class="pages">
                         <a href="#about">About</a>
+                    </li>
+                    <li class="pages">
+                        <a href="#skills">Skills</a>
                     </li>
                     <li class="pages">
                         <a href="#projects">Projects</a>  
@@ -85,10 +89,10 @@
             </div>
         </div>
         <!--SKILLS SECTION-->
-        <div class="home">
+        <div class="home" id="skills">
             <div class="box b">
                 <h1 class="section-title">Skills</h1>
-                <p class="header-desc">Here are the technologies that I have used to develop.</p>
+                <p class="header-desc">Here are the tools that I have used for development.</p>
                 
                 <div class="skills-container">
                         <!-- <h2>Programming</h2> -->
@@ -173,10 +177,15 @@
                                 </i>
                                 </div>
                                 <!-- <p>TOOLS</p> -->
+
                                 <div class="tooltip-container">
-                                <i class="devicon-androidstudio-plain colored">
-                                    <span class="tooltip-content">Android Studio</span>
-                                </i>
+                                    <img class="png-icon" src="assets/phpstorm.png">
+                                        <span class="tooltip-content">PhpStorm</span>
+                                </div>
+
+                                <div class="tooltip-container">
+                                    <img class="png-icon" src="assets/postman.png">
+                                    <span class="tooltip-content">Postman</span>
                                 </div>
 
                                 <div class="tooltip-container">
@@ -326,17 +335,24 @@
 
         <!--CONTACT-->
         <div class="contact" id="contact">
-
-            <div class="box b">
-                <h1 class="section-title">Contact</h1>
-                <div class="social">
+            <h1 class="section-title">Contact</h1>
+            <div class="social">
                 <p>Thanks for visiting! I'm always up for a chat. Feel free to reach out through any of the following:</p>
-                <a href="https://www.facebook.com" class="fa-brands fa-viber" target="_blank"></a>
-                <a href="https://www.facebook.com" class="fa-brands fa-linkedin" target="_blank"></a>
-                <a href="https://www.facebook.com" class="fa-brands fa-skype" target="_blank"></a>
-                <a href="https://www.facebook.com" class="fa-brands fa-whatsapp" target="_blank"></a>
-                <p id="email-copy" data-clipboard="email">drezzaanacito0@gmail.com</p>
-                <p id="num-copy" data-clipboard="num">(+63)9561387066</p>
+                <a href="https://www.github.com" class="social-icon" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.whatsapp.com" class="social-icon" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://www.skype.com" class="social-icon" target="_blank">
+                    <ion-icon name="logo-skype"></ion-icon>
+                </a>
+                <div class="copy-text">
+                    <p id="email-copy" data-clipboard="email">drezzaanacito0@gmail.com</p>
+                    <p id="num-copy" data-clipboard="num">(+63)9561387066</p>
                 </div>
             </div>
         </div>
@@ -355,7 +371,10 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="node_modules/aos/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="index.js"></script>
     </body>
 </html>
