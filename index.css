@@ -35,7 +35,7 @@ nav{
 /* nav bg change on scroll */
 .background{
   background-color: black;
-  background-image: url("portfolio/assets/hero.svg");
+  background-image: url("assets/hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
