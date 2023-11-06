@@ -51,6 +51,7 @@ nav ul{
   justify-content: center;
   align-items: center;
   margin: 1%;
+  padding: 0;
 }
 nav a{
   text-decoration: none;
@@ -123,7 +124,7 @@ nav a{
 }
 
 /* ---------------------------------------home */
-.home, .contact {
+.home {
   --min: 20ch;
   --gap: 0.5rem;
     padding: 5%;
@@ -171,10 +172,15 @@ nav a{
   grid-column-gap: 1em;
 }
 
-.devicon-unity-original{
-  background-color: rgb(235, 235, 235);
-  border-radius: 2px;
+.png-icon{
+  width: 70px;
+  height: 70px;
 }
+
+.devicon-unity-original{
+  text-shadow: 0 0 7px white;
+}
+
 .box.b, .projbox.b h1{
   text-align: center;
   color: white;
@@ -300,14 +306,40 @@ nav a{
 
 
 /* ---------------------------------------contact */
-.social a{
-  font-size: 40pt;
-  padding: 0;
+.contact{
+  text-align: center;
   color: white;
-  text-decoration: none;
+  font-size: 150%;
+  padding: 5%;
 }
 
+.social .social-icon{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  justify-content: center;
+  margin: 5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  border: 2px solid #800e90;
+}
+
+.social .social-icon:hover{
+  background-color: #800e90;
+  color: red;
+  transition: ease 0.5s;
+}
+
+ion-icon{
+  font-size: 27pt;
+  color: #0c9fa1;
+}
+
+
 #email-copy, #num-copy{
+  width: auto;
   cursor: pointer;
   text-decoration: underline dotted;
   text-decoration-color: rgb(165, 44, 171);
