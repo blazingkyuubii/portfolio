@@ -144,10 +144,20 @@ nav a{
   }
 
 #ownerImg{
+    width: 90%;
     max-width: 100%;
-    max-height: auto;
+    max-height: 100%;
     display: flex;
     justify-content:center;
+    align-items: center;
+}
+
+.section-title.about{
+  margin-top: 0;
+}
+
+.about-text{
+  font-size: 19pt;
 }
 
 /* ---------------------------------------skills */
@@ -397,19 +407,22 @@ footer{
 
 
 /* ---------------------------------------MEDIA QUERIES*/
+
+/* skills container to adjust as screen gets smaller */
 @media screen and (max-width: 850px) {
   .skills-container li {
-    grid-template-columns: repeat(4, 1.6em); /* Adjust this for your needs */
+    grid-template-columns: repeat(4, 1.6em);
   }
 }
 
 /* Media query for even smaller screens */
 @media screen and (max-width: 480px) {
   .skills-container li {
-    grid-template-columns: repeat(2, 1.6em); /* Adjust this for your needs */
+    grid-template-columns: repeat(2, 1.6em);
   }
 }
 
+/* for mobile devices */
 @media only screen and (max-width: 600px) {
 
   nav{
@@ -434,6 +447,10 @@ footer{
 
  .footer-container .column {
     text-align: center; /* Center the text within each column */
+  }
+
+  #ownerImg{
+    width: 100%;
   }
   
 }
