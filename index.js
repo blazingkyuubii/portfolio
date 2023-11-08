@@ -122,5 +122,24 @@ function copyText(event) {
   }
 }
 
+//Change Flickity settings on mobile mode
+// function updateFlickity(){
+//     const isMobile = window.innerWidth <= 900;
+//     const carousel = document.querySelector('.main-carousel');
+
+//     if(isMobile){
+//         carousel.setAttribute(
+//           "data-flickity", '{ "cellAlign": "center", "contain": true, "prevNextButtons": false, "autoPlay": true }'
+//         )
+//     }else{
+//         carousel.setAttribute(
+//           "data-flickity", '{ "cellAlign": "center", "contain": true}'
+//         );        
+//     }
+// }
+
+// window.addEventListener("load", updateFlickity);
+// window.addEventListener("resize", updateFlickity);
+
 
 

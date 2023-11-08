@@ -2,11 +2,13 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Sintony', sans-serif; */
 *{
+  scrollbar-color: #0c9fa1 #0E0915;
+  scrollbar-width: thin;
   font-family: 'Poppins', sans-serif;
 }
 
 html{
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body
@@ -158,6 +160,7 @@ nav a{
 
 .about-text{
   font-size: 19pt;
+  text-align: left;
 }
 
 /* ---------------------------------------skills */
@@ -249,6 +252,15 @@ nav a{
   opacity: 0.8;
 }
 
+.flickity-page-dots .dot{
+  border: 2px solid #0c9fa1;
+}
+
+.flickity-page-dots .dot.is-selected{
+  background: #800e90;
+}
+
+
 .info-overlay{
   background-color: gray;
   width: 100%;
@@ -291,22 +303,28 @@ nav a{
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #0E0915;
   padding: 20px;
   border-radius: 5px;
   /* box-shadow: 0 0 40px rgb(0, 0, 0); */
   max-width: 50%;
   max-height: 80%;
   overflow-y: auto;
+  color:rgb(233, 232, 232);
+}
+
+.modal-tool{
+  font-weight: bold;
 }
 
 .close {
+  font-size: 15pt;
   float: right;
   cursor: pointer;
 }
 
 .badge{
-  background-color: #74019a;
+  background-color: #0c9fa1;
   color: white;
   padding: 5px 7px;
   border-radius: 5px;
@@ -430,12 +448,33 @@ footer{
     justify-content: space-between;
   }
   
-  .pages, .resumeBtn{
+  .pages{
     display: none;
   }
   
   .burgertoggle{
     display: flex;
+    background-color: white;
+  }
+
+  #hero-name{
+    font-size: 40pt;
+  }
+
+  #ownerImg{
+    width: 100%;
+  }
+
+  .about-text{
+    text-align: justify;
+  }
+
+  .section-title{
+    font-size: 30pt;
+  }
+
+  .header-desc, .about-text{
+    font-size: 14pt;
   }
 
   .skills-container{
@@ -445,12 +484,18 @@ footer{
     grid-template-rows: auto;
   }
 
+  .main-carousel{
+    max-width: 100%;
+  }
+
+  .modal-content {
+  max-width: 100%;
+  max-height: 80%;
+}
+
  .footer-container .column {
     text-align: center; /* Center the text within each column */
   }
 
-  #ownerImg{
-    width: 100%;
-  }
   
 }
